@@ -62,6 +62,6 @@ st.subheader('Further Challenger')
 
 # df = pd.DataFrame({"x": [species], "y": ['Iris-setosa','Iris-versicolor','Iris-virginica']})
 # st.write(df)
-st.table(['Iris-setosa','Iris-versicolor','Iris-virginica'])
+st.table('Species', ['Iris-setosa','Iris-versicolor','Iris-virginica'])
 
 # st.table(df)
