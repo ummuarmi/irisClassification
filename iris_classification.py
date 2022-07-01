@@ -61,6 +61,6 @@ species_width = st.sidebar.slider('Species width', 2.0, 4.4, 3.4)
 data = {'rows': rows_length,
         'species': species_width}
 features = pd.DataFrame(data, index=[0])
-st.table(data, ['Iris-setosa','Iris-versicolor','Iris-virginica'])
+st.table(['rows','species'], ['Iris-setosa','Iris-versicolor','Iris-virginica'])
 
 # st.table(df)
