@@ -48,4 +48,4 @@ st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
 st.subheader('Further Challenger')
-st.table(columns=['rows','species'],rows=['Iris-setosa','Iris-versicolor','Iris-virginica'])
+st.table(['Iris-setosa','Iris-versicolor','Iris-virginica'])
