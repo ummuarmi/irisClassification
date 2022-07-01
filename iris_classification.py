@@ -54,5 +54,5 @@ st.subheader('Further Challenger')
 #        'species': species_width}
 #features = pd.DataFrame(data, index=[0])
 st.table(['Iris-setosa','Iris-versicolor','Iris-virginica'])
-df = pd.DataFrame(['Iris-setosa','Iris-versicolor','Iris-virginica'],columns=("rows","species"))
+df = pd.DataFrame(['Iris-setosa','Iris-versicolor','Iris-virginica'],columns=('species'))
 st.table(df)
