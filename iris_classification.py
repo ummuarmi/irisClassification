@@ -56,12 +56,11 @@ def flowers_table():
 df = flowers_table()
 
 st.subheader('Further Challenger')
-#df = pd.DataFrame(
-#    np.random.randn(10, 5),
-#    columns=('Species'))
-
-# df = pd.DataFrame({"x": [species], "y": ['Iris-setosa','Iris-versicolor','Iris-virginica']})
-# st.write(df)
-st.table('Species', ['Iris-setosa','Iris-versicolor','Iris-virginica'])
+rows_length = st.sidebar.slider('Rows length', 4.3, 7.9, 5.4)
+species_width = st.sidebar.slider('Species width', 2.0, 4.4, 3.4)
+data = {'rows': rows_length,
+        'species': species_width}
+features = pd.DataFrame(data, index=[0])
+st.table(data, ['Iris-setosa','Iris-versicolor','Iris-virginica'])
 
 # st.table(df)
