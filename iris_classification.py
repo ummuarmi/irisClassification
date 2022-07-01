@@ -46,3 +46,14 @@ st.write(prediction)
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
+
+def flowers_table():
+    species_length = st.sidebar.slider('Species', 4.3, 7.9, 5.4)
+    data = {'species': species_length}
+    flowers = pd.DataFrame(data, index=[0])
+    return flowers
+
+df = flowers_table()
+
+st.subheader('Further Challenger')
+st.table(df)
