@@ -60,7 +60,8 @@ st.subheader('Further Challenger')
 #    np.random.randn(10, 5),
 #    columns=('Species'))
 
-df = pd.DataFrame({"x": [species], "y": ['Iris-setosa','Iris-versicolor','Iris-virginica']})
-st.write(df)
+# df = pd.DataFrame({"x": [species], "y": ['Iris-setosa','Iris-versicolor','Iris-virginica']})
+# st.write(df)
+st.table(['Iris-setosa','Iris-versicolor','Iris-virginica'])
 
 # st.table(df)
