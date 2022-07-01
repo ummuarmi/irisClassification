@@ -56,4 +56,11 @@ def flowers_table():
 df = flowers_table()
 
 st.subheader('Further Challenger')
-st.table(df)
+#df = pd.DataFrame(
+#    np.random.randn(10, 5),
+#    columns=('Species'))
+
+df = pd.DataFrame({"x": [species], "y": ['Iris-setosa','Iris-versicolor','Iris-virginica']})
+st.write(df)
+
+# st.table(df)
