@@ -48,11 +48,4 @@ st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
 st.subheader('Further Challenger')
-#rows_length = st.sidebar.slider('Rows length', 4.3, 7.9, 5.4)
-#species_width = st.sidebar.slider('Species width', 2.0, 4.4, 3.4)
-#data = {'rows': rows_length,
-#        'species': species_width}
-#features = pd.DataFrame(data, index=[0])
-st.table(['Iris-setosa','Iris-versicolor','Iris-virginica'])
-df = pd.DataFrame(['Iris-setosa','Iris-versicolor','Iris-virginica'],columns=('species'))
-st.write(df)
+st.table(['species'],['Iris-setosa','Iris-versicolor','Iris-virginica'])
