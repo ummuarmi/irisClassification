@@ -47,5 +47,8 @@ st.write(prediction)
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
-st.subheader('Further Challenger')
+st.write("""
+# Further Challenger
+Show data in table!
+""")
 st.table(['Iris-setosa','Iris-versicolor','Iris-virginica'])
